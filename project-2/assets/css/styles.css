@@ -413,3 +413,68 @@ a {
 .popular .course-list .book-btn:hover{
     background: var(--primary-color);
 }
+
+/* Feadback */
+.feadback {
+    background-color: #2E2100;
+    padding: 96px 0;
+}
+
+.feadback .main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feadback .user_info{
+    flex: 1;
+}
+
+.feadback .feadback_mess{
+    flex: 2;
+}
+
+.feadback .user_name{
+    color: #F7F7F7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42;
+}
+
+.feadback .user_job{
+    color: #BFBCB2;
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.857; 
+}
+
+.feadback .user_img{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.feadback .feadback_mess .mess {
+    color: #FFF;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.538; 
+}
+
+.feadback .list_user{
+    margin-top: 28px;
+    display: flex;
+    gap: 6px;
+}
+
+.feadback  .item_user a{
+    color: 
+    #634700;
+}
+
+.feadback  .item_user a:hover{
+    color: var(--primary-color);
+}
