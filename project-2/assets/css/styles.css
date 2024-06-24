@@ -42,6 +42,7 @@ a {
     background: #171100;
     font-size: 1.6rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -59,6 +60,37 @@ a {
     -webkit-line-clamp: var(--line-clamp, 2);
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.word-break{
+    word-break: break-all;
+}
+
+.heading{
+    color: #171100;
+    font-family: var(--font-heading) ;
+    font-weight: 700;
+    letter-spacing: -1.16px;
+}
+
+.heading.lv1{
+    font-size: 5.8rem;
+    line-height: 1.17;
+}
+
+.heading.lv2{
+    letter-spacing: -0.76px;
+    font-size: 3.8rem;
+    line-height: 1.263;
+}
+
+.heading.lv3{
+    font-size: 1.8rem;
+    line-height: 1.667;
+}
+
+.heading.lv3 a{
+    color: #171100;
 }
 /* header */
 
@@ -131,7 +163,7 @@ a {
 
 /* Hero left */
 .hero{
-    padding-top: 56px;
+    padding: 56px 0 65px;
     background: #FFFCF4;
 }
 
@@ -149,6 +181,7 @@ a {
 
 
 .hero .hero-img{
+    display: block;
     width: 470px;
     height: 685px;
     object-fit: cover;
@@ -189,9 +222,11 @@ a {
     color: #5F5B53;
     font-size: 1.4rem;
     font-weight: 400;
+    line-height: 26px;
 }
 
 .hero-summary .title{
+    margin-top: 8px;
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
@@ -204,15 +239,7 @@ a {
     padding-top: 64px;
 }
 
-.hero .heading{
-    color: #171100;
 
-    font-family: var(--font-heading) ;
-    font-size: 5.8rem;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: -1.16px;
-}
 
 .hero .desc{
     margin-top: 22px;
@@ -276,4 +303,113 @@ a {
 
 .hero .course-detail strong:nth-child(1){
     padding-left: 0;
+}
+
+
+/* Popular */
+.popular{
+    padding:  200px 0;
+}
+
+.popular-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular .desc{
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.667;
+    width: 458px;
+}
+
+.popular .course-list{
+    margin-top: 55px;
+    gap: 30px;
+}
+
+.popular .item{
+    flex: 1;
+    border-radius: 12px;
+    background: #FFF;
+    border: 1px solid #E2DFDA;
+}
+
+.popular .item:hover{
+    border-color:  transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .content{
+    padding: 16px 22px 22px;
+}
+
+.popular  .course-img{
+    display: block;
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 12px 12px 0px 0px;
+}
+
+.popular .title-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.popular .title-group .rate{
+    display: flex;
+    align-items: center;
+    color: #FEA31B;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.popular .title-group .heading{
+    padding-right: 4px;
+}
+
+.popular .course-desc{
+    margin-top: 6px;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px; /* 185.714% */
+}
+
+.popular .payment{
+    justify-content: space-between;
+    margin: 12px 0 22px;
+}
+
+.popular .controls{
+    display: flex;
+    gap: 18px;
+}
+
+.popular .control-btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.popular .control-btn:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.popular .course-list .book-btn:hover{
+    background: var(--primary-color);
 }
