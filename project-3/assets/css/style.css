@@ -340,13 +340,13 @@ a{
     border: 16px solid #EAF6FF;
     padding: 43px 42px;
     border-radius: 4px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .work__item:hover{
     transform: translateY(-16px);
     border-color: var(--primary-color);
-}
+}   
 
 .work__title{
     margin-top: 18px;
