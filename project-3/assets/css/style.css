@@ -361,7 +361,7 @@ a{
     background: #F6FBFF;
 }
 
-.work__desc{
+.work__desc-top{
     width: 468px;
 }
 
@@ -616,6 +616,7 @@ a{
     width: 270px;
     border-radius: 12px;
     border: 1px solid #E8EBEE;
+    transition: .25s;
 }
 
 .news__item:hover{
@@ -663,5 +664,37 @@ a{
     font-weight: 500;
 }
 
+/* Appointment */
+.appointment{
+    margin-bottom: 170px;
+}
+
+.appointment__inner{
+    padding: 100px 0;
+    background: #F6FBFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 
+.appointment__desc{
+    position: relative;
+    margin: 38px 0;
+    width: 617px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.appointment__desc::before{
+    position: absolute;
+    content: "";
+    width: 136px;
+    height: 2px;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+}
